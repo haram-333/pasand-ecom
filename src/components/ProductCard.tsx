@@ -101,9 +101,9 @@ export default function ProductCard({ product, showOnlyFirst = false, isMobile =
         {/* Details */}
         <div className={`${isMobile ? 'p-3' : 'p-4'}`}>
           <Link href={`/product/${product.id}`} className="block">
-            <h2 className={`font-semibold hover:text-blue-600 transition-colors ${
+            <h2 className={`font-semibold hover:text-blue-600 transition-colors truncate ${
               isMobile ? 'text-sm' : 'text-lg'
-            }`}>{product.name}</h2>
+            }`} title={product.name}>{product.name}</h2>
           </Link>
           <div className="flex items-center gap-2 mt-2">
             <span className={`text-red-600 font-bold ${

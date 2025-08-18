@@ -109,7 +109,7 @@ export default function KidProductCard({ product }: KidProductCardProps) {
             {/* Details */}
             <div className="p-4">
                 <Link href={`/product/${product.id}`} className="block">
-                    <h2 className="text-lg font-semibold hover:text-blue-600 transition-colors">{product.name}</h2>
+                    <h2 className="text-lg font-semibold hover:text-blue-600 transition-colors truncate" title={product.name}>{product.name}</h2>
                 </Link>
                 <div className="flex items-center gap-2 mt-2">
                     <span className="text-red-600 font-bold">
